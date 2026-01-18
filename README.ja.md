@@ -93,7 +93,7 @@ Libinfoのソースコード中でインクルードしている「存在しな�
 - os/feature_private.h: Torrekie/apple_internal_sdk から拝借。
 - opendirectory/od_private_hmr.h: 当方にて作成。
 - 他のほとんどは他のApple OSSから同名のファイルをかき集めました。
-- これらを参照するように Lixinfo.xcconfig を修正しました。
+- これらを参照するように Libinfo.xcconfig を修正しました。
 - どうしても見つからないヘッダファイルはソースコード中でコメントアウトしました。
   - それに起因するビルドエラーはソースコードを改変して対処しました。
 
@@ -112,7 +112,7 @@ Libinfoのソースコード中でインクルードしている「存在しな�
 
 ## ライセンス
 
-- Apple OSSは `Apple Public Source License(APSL)` でライセンスされています。
+- Apple OSSは `Apple Public Source License (APSL)` でライセンスされています。
   - APSLにはバージョン 1.0, 1.1, 1.2, 2.0とあり、内容がまあまあ違います。
   - ソフトウェアごとにどのバージョンを使用しているのか異なります。
 - apple_internal_sdk のライセンスは明記されていません。
@@ -123,3 +123,5 @@ Libinfoのソースコード中でインクルードしている「存在しな�
 - [Apple OSS Distributions](https://github.com/apple-oss-distributions)
 - [Torrekie/apple_internal_sdk](https://github.com/Torrekie/apple_internal_sdk)
 - [showxu/objc4](https://github.com/showxu/objc4)
+- [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html)
+- [Building xnu for OS X 10.11 El Capitan (ssen's blog)](https://shantonu.blogspot.com/2015/12/building-xnu-for-os-x-1011-el-capitan.html)

@@ -124,3 +124,5 @@ The following measures were taken to address "non-existent private headers" incl
 - [Apple OSS Distributions](https://github.com/apple-oss-distributions)
 - [Torrekie/apple_internal_sdk](https://github.com/Torrekie/apple_internal_sdk)
 - [showxu/objc4](https://github.com/showxu/objc4)
+- [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html)
+- [Building xnu for OS X 10.11 El Capitan (ssen's blog)](https://shantonu.blogspot.com/2015/12/building-xnu-for-os-x-1011-el-capitan.html)
