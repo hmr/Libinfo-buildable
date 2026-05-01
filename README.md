@@ -8,7 +8,7 @@ This repository contains those modifications, making it buildable on a regular m
 
 ## Versions
 
-The software versions used are based on macOS 26.2.
+The versions of each source code are based on macOS 26.2. For specific details on which versions are used, please refer to [opensource.apple.com]() or [GitHub](https://github.com/apple-oss-distributions/distribution-macOS/tree/macos-262).
 
 ```
 Libinfo-repo/

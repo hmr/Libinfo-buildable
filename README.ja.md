@@ -8,8 +8,7 @@
 
 ## バージョン
 
-使用しているソフトウェアのバージョンは macOS 26.2 に準拠しています。
-
+各ソースコードのバージョンはmacOS 26.2に基づいています。具体的にどのバージョンが使われているのかは [opensource.apple.com]() または [GitHub](https://github.com/apple-oss-distributions/distribution-macOS/tree/macos-262) を参照してください。
 ```
 Libinfo-repo/
 ├── Libinfo-600/            # https://github.com/apple-oss-distributions/Libinfo/archive/Libinfo-600.tar.gz
