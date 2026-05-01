@@ -8,7 +8,7 @@
 
 ## バージョン
 
-各ソースコードのバージョンはmacOS 26.2に基づいています。具体的にどのバージョンが使われているのかは [opensource.apple.com]() または [GitHub](https://github.com/apple-oss-distributions/distribution-macOS/tree/macos-262) を参照してください。
+各ソースコードのバージョンはmacOS 26.2に基づいています。具体的にどのバージョンが使われているのかは [opensource.apple.com/releases](https://opensource.apple.com/releases/) または [GitHub](https://github.com/apple-oss-distributions/distribution-macOS/tree/macos-262) を参照してください。
 ```
 Libinfo-repo/
 ├── Libinfo-600/            # https://github.com/apple-oss-distributions/Libinfo/archive/Libinfo-600.tar.gz
@@ -87,11 +87,11 @@ DYLD_LIBRARY_PATH=./build/Debug lldb ./testbinary
 
 ### プライベートヘッダーの問題
 
-Libinfoのソースコード中でインクルードしている「存在しないプライベートヘッダ」について以下の対応を行っています。
+Libinfoのソースコードが参照している「存在しないプライベートヘッダ」について以下の対策を行っています。
 
-- os/feature_private.h: Torrekie/apple_internal_sdk から拝借。
+- os/feature_private.h: Torrekie/apple_internal_sdk[^3] から拝借。
 - opendirectory/od_private_hmr.h: 当方にて作成。
-- 他のほとんどは他のApple OSSから同名のファイルをかき集めました。
+- 他のほとんどは他のApple OSS[^1][^2]から同名のファイルをかき集めました。
 - これらを参照するように Libinfo.xcconfig を修正しました。
 - どうしても見つからないヘッダファイルはソースコード中でコメントアウトしました。
   - それに起因するビルドエラーはソースコードを改変して対処しました。
@@ -118,9 +118,9 @@ Libinfoのソースコード中でインクルードしている「存在しな�
 
 ## 関連リソース
 
-- [Apple Open Source](https://opensource.apple.com/source/)
-- [Apple OSS Distributions](https://github.com/apple-oss-distributions)
-- [Torrekie/apple_internal_sdk](https://github.com/Torrekie/apple_internal_sdk)
-- [showxu/objc4](https://github.com/showxu/objc4)
-- [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html)
-- [Building xnu for OS X 10.11 El Capitan (ssen's blog)](https://shantonu.blogspot.com/2015/12/building-xnu-for-os-x-1011-el-capitan.html)
+[^1]: [Apple Open Source](https://opensource.apple.com/source/)
+[^2]: [Apple OSS Distributions](https://github.com/apple-oss-distributions)
+[^3]: [Torrekie/apple_internal_sdk](https://github.com/Torrekie/apple_internal_sdk)
+[^4]: [showxu/objc4](https://github.com/showxu/objc4)
+[^5]: [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html)
+[^6]: [Building xnu for OS X 10.11 El Capitan (ssen's blog)](https://shantonu.blogspot.com/2015/12/building-xnu-for-os-x-1011-el-capitan.html)
